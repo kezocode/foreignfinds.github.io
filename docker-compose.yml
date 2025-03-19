@@ -1,0 +1,63 @@
+
+services:
+  app:
+    image: sail-8.2/app
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/var/www/html
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    environment:
+      - VITE_APP_URL=http://host.docker.internal:5173
+    networks:
+      - sail
+    depends_on:
+      - db
+      # - mailpit
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8080:80"
+      - "5173:5173"
+    command: bash -c "npm run dev & apache2-foreground"
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: kezodb
+      POSTGRES_USER: kezo
+      POSTGRES_PASSWORD: "kezo"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - sail
+    ports:
+      - "5432:5432"
+
+  # # Mailpit（メールキャッチャー）
+  # mailpit:
+  #   image: mailpit/mailpit:v1.7.0
+  #   ports:
+  #     - "1025:1025"
+  #     - "8025:8025"
+  #   networks:
+  #     - sail
+  #   restart: always
+
+#   # Redis（必要であれば）
+#   redis:
+#     image: redis:alpine
+#     container_name: laravel-redis
+#     networks:
+#       - sail
+
+# サービスの依存関係を保持するボリューム
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  sail:
+    driver: bridge

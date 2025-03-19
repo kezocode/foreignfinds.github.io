@@ -1,0 +1,34 @@
+src/にプログラムを書く
+src/
+└aiueo.php
+
+ディレクトリでまとめて書く場合
+src/
+├jp_dir/
+│├aiueo.php
+│└kakikukeko.php
+└en_dir/
+　├abc.php
+　└xyz.php
+
+
+■スタートでUbuntuを開く
+　→Ubuntu（terminal）が開かれる
+
+
+■Ubuntuでコマンドを入力する
+root@muraimo-d:~# cd kezo/laravel_11/
+root@muraimo-d:~/kezo/laravel_11# docker compose down -v
+root@muraimo-d:~/kezo/laravel_11# docker compose up --build
+
+
+■Webサイトにアクセスしてみる
+http://localhost:8080/test.php
+
+他にも自分でページ（aiueo.php）を作ったら
+http://localhost:8080/aiueo.php
+
+ディレクトリでまとめて書く場合
+（今はそういうファイルはないので、アクセスできません）
+http://localhost:8080/jp_dir/aiueo.php
+http://localhost:8080/jp_dir/kakikukeko.php
