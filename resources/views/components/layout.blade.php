@@ -13,37 +13,31 @@
 </head>
 
 <body class="h-full">
-    <div>
-        <nav class="bg-red-600">
-            <div>
-                <div class="flex h-16 items-center justify-between">
+    <nav class="bg-red-600">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center">
 
-                    <div>
-                        <a class="rounded-md py-2 pl-6 font-[Oswald] text-3xl text-white hover:text-black"
-                            href="/">Foreign Finds</a>
-                    </div>
-
-                    {{-- fix spacing --}}
-                    <div class="flex flex-1 justify-center">
-                        <div class="flex space-x-6">
-                            <a class="rounded-md px-3 py-2 font-[Oswald] text-lg text-white hover:text-black"
-                                href="{{ route('places') }}" aria-current="page">Places</a>
-                            <a class="rounded-md px-3 py-2 font-[Oswald] text-lg text-white hover:text-black"
-                                href="{{ route('food') }}">Food</a>
-                            <a class="rounded-md px-3 py-2 font-[Oswald] text-lg text-white hover:text-black"
-                                href="{{ route('fun') }}">Fun</a>
-                            <a class="rounded-md px-3 py-2 font-[Oswald] text-lg text-white hover:text-black"
-                                href="{{ route('history') }}">History</a>
-                            <a class="rounded-md px-3 py-2 font-[Oswald] text-lg text-white hover:text-black"
-                                href="{{ route('contact') }}">Contact</a>
-                        </div>
-                    </div>
+                <div class="w-1/3">
+                    <a class="font-[Oswald] text-3xl text-white hover:text-black" href="/">Foreign Finds</a>
                 </div>
-            </div>
-        </nav>
 
-        {{ $slot }}
-    </div>
+                <div class="flex w-1/3 justify-center space-x-6">
+                    <a class="font-[Oswald] text-2xl text-white hover:text-black"
+                        href="{{ route('places') }}">Places</a>
+                    <a class="font-[Oswald] text-2xl text-white hover:text-black" href="{{ route('food') }}">Food</a>
+                    <a class="font-[Oswald] text-2xl text-white hover:text-black" href="{{ route('fun') }}">Fun</a>
+                    <a class="font-[Oswald] text-2xl text-white hover:text-black"
+                        href="{{ route('history') }}">History</a>
+                    <a class="font-[Oswald] text-2xl text-white hover:text-black"
+                        href="{{ route('contact') }}">Contact</a>
+                </div>
+
+                <div class="w-1/3"></div>
+            </div>
+        </div>
+    </nav>
+
+    {{ $slot }}
 </body>
 
 </html>
