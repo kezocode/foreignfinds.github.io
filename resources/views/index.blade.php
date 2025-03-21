@@ -3,87 +3,67 @@
     <!-- Header Section -->
     <header class="bg-white shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-6 text-center sm:px-6 lg:px-8">
-            <h1 class="font-[Oswald] text-4xl font-bold tracking-tight text-gray-900">
+            <h1 class="font-[Quintessential] text-4xl font-bold tracking-tight text-gray-900">
                 Explore the Beauty of Japan
             </h1>
         </div>
 
-        <!-- Animated Slider -->
+        <x-carousel>
 
-        <div class="relative w-full" id="default-carousel" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="active duration-700 ease-in-out" data-carousel-item>
-                    <img class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        src="./img/akihabara.png" alt="Akihabara">
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        src="./img/fuji.png" alt="Mt. Fuji">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        src="./img/kyoto-street.png" alt="Kyoto">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        src="./img/onsen.png" alt="Onsen">
-                </div>
-                <!-- Item 5 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        src="./img/osaka.png" alt="Osaka">
-                </div>
-            </div>
-            <!-- Slider indicators -->
-            <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
-                <button class="h-3 w-3 rounded-full" data-carousel-slide-to="0" type="button" aria-current="true"
-                    aria-label="Slide 1"></button>
-                <button class="h-3 w-3 rounded-full" data-carousel-slide-to="1" type="button" aria-current="false"
-                    aria-label="Slide 2"></button>
-                <button class="h-3 w-3 rounded-full" data-carousel-slide-to="2" type="button" aria-current="false"
-                    aria-label="Slide 3"></button>
-                <button class="h-3 w-3 rounded-full" data-carousel-slide-to="3" type="button" aria-current="false"
-                    aria-label="Slide 4"></button>
-                <button class="h-3 w-3 rounded-full" data-carousel-slide-to="4" type="button" aria-current="false"
-                    aria-label="Slide 5"></button>
-            </div>
-            <!-- Slider controls -->
-            <button
-                class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-prev type="button">
-                <span
-                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-                    <svg class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button
-                class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-next type="button">
-                <span
-                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-                    <svg class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
+        </x-carousel>
     </header>
 
     <!-- Main Content -->
     <main class="px-6 lg:px-12">
+        <!-- Featured Sections -->
+        <div class="grid grid-cols-1 gap-6 py-12 md:grid-cols-2">
+            <div>
+                <img class="h-[25rem] rounded-xl object-cover" src="./img/tokyo.png" alt="">
+            </div>
+            <div class="p-6 text-center">
+                <p class="mb-2 font-[Oswald] text-4xl">Cultural Immersion</p>
+                <div class="mt-6">
+                    <li class="pb-6 text-lg text-gray-700">
+                        Explore the serene beauty of temples and shrines, like Kyoto's Fushimi Inari Shrine or Tokyo's
+                        Meiji
+                        Shrine,
+                        offering a glimpse into Japan's rich history and spiritual traditions.
+                    </li>
+                    <li class="pb-6 text-lg text-gray-700">
+                        Experience vibrant festivals, tea ceremonies, and other cultural events that showcase Japan's
+                        unique
+                        traditions.
+                    </li>
+                    <li class="pb-6 text-lg text-gray-700">
+                        Japan is the birthplace of anime and manga, and you can explore themed attractions, conventions,
+                        and
+                        stores dedicated to these popular forms of entertainment.
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 py-12 md:grid-cols-2">
+
+            <div class="p-6 text-center">
+                <p class="mb-2 font-[Oswald] text-4xl">Natural Beauty</p>
+                <div class="mt-6">
+                    <li class="pb-6 text-lg text-gray-700">
+                        From the majestic snow-capped peaks of Mount Fuji to the pristine beaches of Okinawa, Japan
+                        boasts diverse and breathtaking natural landscapes.
+                    </li>
+                    <li class="pb-6 text-lg text-gray-700">
+                        Witness the iconic beauty of cherry blossoms during spring, when Japan transforms into a sea of
+                        pink.
+                    </li>
+                    <li class="pb-6 text-lg text-gray-700">
+                        Relax and rejuvenate in Japan's natural hot springs, an essential Japanese experience.
+                    </li>
+                </div>
+            </div>
+            <div class="ml-auto">
+                <img class="h-[25rem] rounded-xl object-cover" src="./img/onsen.png" alt="">
+            </div>
+        </div>
 
         <!-- What Are You Looking For Section -->
         <section class="py-12 text-center">
@@ -132,47 +112,24 @@
             </div>
         </section>
 
-        <!-- Featured Sections -->
-        <div class="grid grid-cols-1 gap-6 py-12 md:grid-cols-3">
-            <div class="rounded-xl border-4 border-red-600 p-6 text-center">
-                <p class="mb-2 font-[Oswald] text-4xl">Cultural Immersion</p>
-                <p class="text-lg text-gray-700">
-                    Explore the serene beauty of temples and shrines, like Kyoto's Fushimi Inari Shrine or Tokyo's Meiji
-                    Shrine,
-                    offering a glimpse into Japan's rich history and spiritual traditions.
-                </p>
-            </div>
-            <div class="rounded-xl border-4 border-red-600 p-6 text-center">
-                <p class="mb-2 font-[Oswald] text-4xl">Natural Beauty</p>
-                <p class="text-lg text-gray-700">
-                    Marvel at the diverse landscapes, from the majestic peaks of Mount Fuji to the serene beauty of the
-                    Japanese Alps and the vibrant coastline.
-                </p>
-            </div>
-            <div class="rounded-xl border-4 border-red-600 p-6 text-center">
-                <p class="mb-2 font-[Oswald] text-4xl">Delicious Cuisine</p>
-                <p class="text-lg text-gray-700">
-                    Indulge in the diverse and flavorful Japanese cuisine, from fresh sushi and ramen to delicate sweets
-                    and regional specialties.
-                </p>
-            </div>
-        </div>
-
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-white py-12 text-center shadow-sm">
+    <div class="bg-white py-12 text-center shadow-sm">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h1 class="font-[Oswald] text-3xl font-bold text-gray-900">
                 Want to learn something about Japan that we haven't written? Contact us!
             </h1>
         </div>
-        <div class="mt-6">
+        <div class="mt-12">
             <a class="rounded-lg bg-red-600 px-10 py-4 text-2xl font-medium text-white transition-transform duration-300 hover:scale-105 hover:bg-red-700"
                 href="{{ route('contact') }}">
                 Contact
             </a>
         </div>
+    </div>
+    <footer class="w-full bg-gray-800 py-4 text-center text-white">
+        <small>&#169; <span id="year"></span> Foreign Finds. All Rights Reserved.</small>
     </footer>
 
 </x-layout>
