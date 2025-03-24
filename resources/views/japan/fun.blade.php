@@ -1,21 +1,21 @@
 <x-layout>
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">What to do?</h1>
         </div>
     </header>
 
     <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 Whether you want to go to amusement parks, paragliding by Mt. Fuji, or a cafe where maids tend to your
                 every need, Japan has it all!
             </p>
         </div>
 
-        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-8">
             {{-- tokyo disney sea section --}}
-            <div class="mb-6 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/disneysea.png"
                         alt="Tokyo DisneySea">
@@ -24,7 +24,7 @@
                         DisneySea
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Tokyo DisneySea is a fantasy theme park in Tokyo Disney Resort that is unique to Japan. Inspired
                         by the myths and legends of the sea, Tokyo DisneySea is made up of eight themed ports of call:
@@ -39,7 +39,7 @@
             </div>
             <br>
             {{-- fuji-q section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/fujiq.png" alt="Fuji-Q">
                     <span
@@ -47,7 +47,7 @@
                         Fuji-Q
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Fuji-Q Highland (富士急ハイランド) is one of Japan's most popular amusement parks, located in the Fuji
                         Five Lake region at the foot of Mount Fuji. It is best known for its thrilling, record-breaking
@@ -59,7 +59,7 @@
             </div>
             <br>
             {{-- paragliding section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/paragliding.png"
                         alt="Paragliding">
@@ -80,7 +80,7 @@
             </div>
             <br>
             {{-- maid cafe section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/maidcafe.png" alt="Maid Cafe">
                     <span
@@ -88,7 +88,7 @@
                         Maid Cafe
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         At a maid cafe, service goes beyond delivering drinks and desserts. Maids often perform small
                         gestures or “spells” to “enhance” your meal(many of which were born in at-home cafe) and engage
@@ -100,7 +100,7 @@
             </div>
             <br>
             {{-- festival section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/festivals.png" alt="Festival">
                     <span
@@ -108,7 +108,7 @@
                         Festival
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         There are countless local festivals (祭り, matsuri) in Japan because almost every shrine
                         celebrates one of its own. Most festivals are held annually and celebrate the shrine's deity or
@@ -124,7 +124,7 @@
         </div>
     </main>
 
-    <div class="mx-auto mb-6 max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto mb-6 max-w-7xl px-4 py-6">
         <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
             With an endless amount of exciting places to go, you'll never get bored in Japan!
         </p>

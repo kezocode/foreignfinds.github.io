@@ -1,6 +1,6 @@
 <x-layout>
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">How much does it
                 cost?
             </h1>
@@ -8,7 +8,7 @@
     </header>
 
     <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 Trying to figure out how much you need to save to come to Japan can be stressful. With this calculator,
                 you can feel at ease!

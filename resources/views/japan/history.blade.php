@@ -1,13 +1,13 @@
 <x-layout>
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">History of Japan
             </h1>
         </div>
     </header>
 
     <main class="mx-auto max-w-xl">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 Japan has an endless amount of rich history, important to understand to truly enjoy the culture.
             </p>
@@ -18,13 +18,13 @@
         {{-- yayoi --}}
         <x-period title="Yayoi Period (300 BC - 250 AD)" :events="[
             ' The spread of rice farming leads to the development of more complex social hierarchies and
-                                                            larger settlements. Hundreds of small countries emerge and start to unify into larger countries.',
+                                                                                    larger settlements. Hundreds of small countries emerge and start to unify into larger countries.',
         ]" />
 
         {{-- kofun --}}
         <x-period title="Kofun Period (250 - 538)" :events="[
             'Japan is for the first time more or less united. Large tombs (kofun) were built for the deceased
-                                                    leaders.',
+                                                                            leaders.',
         ]" />
 
         {{-- asuka --}}
@@ -51,10 +51,10 @@
             '1191 The Zen sect is introduced.',
             '1192 Minamoto Yoritomo is appointed shogun and establishes the Kamakura government in Kamakura.',
             '1221 The Jokyu Disturbance ends a struggle between Kamakura and Kyoto, resulting in the supremacy of
-                                                    the Hojo regents in Kamakura.',
+                                                                            the Hojo regents in Kamakura.',
             '1232 A legal code, the Joei Shikimoku, is promulgated.',
             '1274 and 1281 The Mongols try to invade Japan twice, but fail mainly because of bad weather
-                                                    conditions.',
+                                                                            conditions.',
             '1333 The Kamakura government falls.',
         ]" />
 
@@ -86,11 +86,11 @@
         <x-period title="Edo Period (1603 - 1868)" :events="[
             '1603 Ieyasu is appointed shogun and establishes the Tokugawa government in Edo (Tokyo).',
             '1639 Isolation of Japan from the rest of the world except for strictly regulated trade with China,
-                     Korea, the Netherlands, the Ryukyu Kingdom and the Ainu.',
+                                             Korea, the Netherlands, the Ryukyu Kingdom and the Ainu.',
             '1688-1703 Genroku era: popular culture flourishes.',
             '1792 The Russians unsuccessfully try to establish trade relations with Japan.',
             '1854 Commodore Matthew Perry forces the Japanese government to open a limited number of ports for
-                    trade.',
+                                            trade.',
         ]" />
 
         {{-- meiji --}}
@@ -134,7 +134,7 @@
 
         </div>
     </main>
-    <div class="mx-auto mb-6 max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto mb-6 max-w-7xl px-4 py-6">
         <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
             Now that you know the extensive history of Japan, you can appreciate Japan for all it's worth!
         </p>

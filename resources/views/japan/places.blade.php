@@ -1,22 +1,22 @@
 <x-layout>
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">Where to Visit?
             </h1>
         </div>
     </header>
 
     <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 Japan is full of wonderful places, so much so that it's hard to choose with limited traveling time.
                 Get a head start on planning the best destination!
             </p>
         </div>
 
-        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-8">
             {{-- kyoto section --}}
-            <div class="mb-6 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/kyoto.png" alt="Kyoto">
                     <span
@@ -24,7 +24,7 @@
                         Kyoto
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Kyoto is the old capital of Japan that greatly represents Japan's history and culture.
                         It's best known for its numerous Buddhist temples, Shinto shrines, palaces, and gardens,
@@ -45,7 +45,7 @@
             </div>
             <br>
             {{-- tokyo section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/tokyo.png" alt="Tokyo">
                     <span
@@ -53,7 +53,7 @@
                         Tokyo
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Tokyo is the #1 most visited place in Japan, and for a good reason!
                         It offers an unlimited choice of shopping, entertainment, culture, and dining.
@@ -76,7 +76,7 @@
             </div>
             <br>
             {{-- osaka section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/osaka.png" alt="Osaka">
                     <span
@@ -84,7 +84,7 @@
                         Osaka
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Osaka is the second largest metropolitan area after Tokyo.
                         People from Osaka speak with Kansai Ben, famous for it's comedic qualities.
@@ -105,7 +105,7 @@
             </div>
             <br>
             {{-- kanazawa section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/ishikawa.png" alt="Kanazawa">
                     <span
@@ -113,7 +113,7 @@
                         Kanazawa
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Kanazawa is an important city in its region and serves as the capital of Ishikawa Prefecture.
                         The city boasts many historical attractions such as restored residences and districts, as well
@@ -138,7 +138,7 @@
             <br>
         </div>
     </main>
-    <div class="mx-auto mb-6 max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto mb-6 max-w-7xl px-4 py-4">
         <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
             Now that you know the best places to visit, pack your bags and jump on a flight!
         </p>

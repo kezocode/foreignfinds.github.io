@@ -2,7 +2,7 @@
 
     <!-- Header Section -->
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 text-center sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6 text-center">
             <h1 class="font-[Montserrat] text-4xl tracking-tight text-gray-900">
                 Explore the Beauty of Japan
             </h1>
@@ -16,7 +16,7 @@
     <!-- Main Content -->
     <main class="px-6 lg:px-12">
         <!-- Featured Sections -->
-        <div class="grid grid-cols-1 gap-6 py-12 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-6 py-12">
             <div>
                 <img class="h-[25rem] rounded-xl object-cover" src="./img/tokyo.png" alt="">
             </div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-6 py-12 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-6 py-12">
 
             <div class="p-6 text-center">
                 <p class="mb-2 font-[Montserrat] text-4xl">Natural Beauty</p>
@@ -68,7 +68,7 @@
         <!-- What Are You Looking For Section -->
         <section class="py-6 text-center">
             <h1 class="mb-8 font-[Montserrat] text-5xl">What are you looking for?</h1>
-            <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+            <div class="grid grid-cols-4 gap-6">
                 <div class="group relative">
                     <a href="{{ route('places') }}">
                         <img class="h-72 rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"

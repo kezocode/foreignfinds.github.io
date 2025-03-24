@@ -1,6 +1,6 @@
 @props(['title', 'events'])
 
-<div class="mb-6 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+<div class="mb-6 flex flex-row items-center space-x-8 space-y-0">
     <div class="relative mx-4 inline-block">
         <h1 class="flex items-center justify-center rounded-lg font-[Montserrat] text-3xl font-semibold text-black">
             {{ $title }} </h1>

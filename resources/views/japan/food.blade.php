@@ -1,12 +1,12 @@
 <x-layout>
     <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">What to Eat?</h1>
         </div>
     </header>
 
     <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 Japan offers an abundance of delicious food, with a variety of regional and seasonal dishes.
                 Whether it be mobile food stands, atmospheric drinking places, or inexpensive chain shops, there's
@@ -14,9 +14,9 @@
             </p>
         </div>
 
-        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-8">
             {{-- sushi section --}}
-            <div class="mb-6 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/sushi.png" alt="Sushi">
                     <span
@@ -24,7 +24,7 @@
                         Sushi
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Sushi is one of the first foods that comes to mind when thinking about Japanese cuisine.
                         The word ‘sushi’ refers to any dish made with Japanese rice that has been seasoned with rice
@@ -38,7 +38,7 @@
             </div>
             <br>
             {{-- udon section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/udon.png" alt="Udon">
                     <span
@@ -46,7 +46,7 @@
                         Udon
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         One of the three main noodle varieties eaten in Japan; udon noodles are thick, chewy, and
                         traditionally made from wheat flour and brine water.
@@ -59,7 +59,7 @@
             </div>
             <br>
             {{-- tempura section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/tempura.png" alt="Tempura">
                     <span
@@ -67,7 +67,7 @@
                         Tempura
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         If you enjoy crispy fried foods, then you will love tempura. Tempura are pieces or slices of
                         meat, fish, and/or vegetables that have been covered in a special tempura batter and deep fried
@@ -77,7 +77,7 @@
             </div>
             <br>
             {{-- yakitori section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/yakitori.png" alt="Yakitori">
                     <span
@@ -85,7 +85,7 @@
                         Yakitori
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         With a name literally meaning ‘barbecued chicken’, yakitori are small skewers of bite-size
                         chicken pieces seasoned with salt or brushed with a sauce.
@@ -96,7 +96,7 @@
             </div>
             <br>
             {{-- sashimi section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/sashimi.png" alt="Sashimi">
                     <span
@@ -104,7 +104,7 @@
                         Sashimi
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Possibly one of the most controversial dishes in all of Japanese cuisine, sashimi is raw fish or
                         meat that has been expertly cut into thin slices and typically comes served with daikon radish,
@@ -114,7 +114,7 @@
             </div>
             <br>
             {{-- ramen section --}}
-            <div class="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-8 sm:space-y-0">
+            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
                 <div class="relative mx-4 inline-block">
                     <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/ramen.png" alt="Ramen">
                     <span
@@ -122,7 +122,7 @@
                         Ramen
                     </span>
                 </div>
-                <div class="max-w-xl text-center sm:text-left">
+                <div class="max-w-xl text-left">
                     <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
                         Ramen is a noodle soup dish consisting of wheat noodles, a
                         savoury broth,and toppings of meat and/or vegetables such as sliced pork, nori seaweed,
@@ -138,7 +138,7 @@
             <br>
         </div>
     </main>
-    <div class="mx-auto mb-6 max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto mb-4 max-w-7xl px-4 py-6">
         <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
             Japan has some of the best food in the world. The mouthwatering images will make you want to come to Japan
             as soon as possible!

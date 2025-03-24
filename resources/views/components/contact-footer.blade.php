@@ -1,5 +1,5 @@
 <div class="bg-white py-12 text-center shadow-sm">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4">
         <h1 class="font-[Montserrat] text-3xl font-bold text-gray-900">
             Want to learn something about Japan that we haven't written? Contact us!
         </h1>
