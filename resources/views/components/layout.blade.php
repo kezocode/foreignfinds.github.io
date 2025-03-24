@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Foreign Finds</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    {{-- <link href="{{ asset('css/style.css') }}" rel="stylesheet"> --}}
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link
