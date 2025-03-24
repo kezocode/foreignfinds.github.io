@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\BudgetCalculatorController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
@@ -30,11 +32,18 @@ Route::get('/japan/history', function () {
     return view('japan.history');
 })->name('history');
 
+Route::get('/japan/travel-calculator', function () {
+    return view('japan.travel-calculator');
+})->name('travel-calculator');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
 Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact.submit');
+
+Route::get('/travel-calculator', [BudgetCalculatorController::class, 'index']);
+Route::post('/travel-calculator/calculate', [BudgetCalculatorController::class, 'calculate']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
