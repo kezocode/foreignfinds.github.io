@@ -78,11 +78,33 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    // 'locale' => env('APP_LOCALE', 'en'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    // 'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
-    'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+    // 'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+
+    'locale' => 'en',  // default locale
+    'fallback_locale' => 'en',  // fallback locale
+    'available_locales' => [
+    'English' => 'en',
+    'Japanese' => 'ja',
+],
+
+
+    /*
+|--------------------------------------------------------------------------
+| Available locales
+|--------------------------------------------------------------------------
+|
+| List all locales that your application works with
+|
+*/
+
+// 'available_locales' => [
+//     'English' => 'en',
+//     'Japanese' => 'ja',
+//   ],
 
     /*
     |--------------------------------------------------------------------------

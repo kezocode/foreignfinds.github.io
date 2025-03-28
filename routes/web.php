@@ -4,13 +4,12 @@ use App\Http\Controllers\BudgetCalculatorController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\View;
 
-// Route::view('/', 'index');
-
-// Route::view('/japan/places', 'places', ['name' => 'places'])->name('places');
-
+Route::middleware(['locale'])->group(function () {
 
 Route::get('/', function () {
     return view('index');
@@ -45,11 +44,19 @@ Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact
 Route::get('/travel-calculator', [BudgetCalculatorController::class, 'index']);
 Route::post('/travel-calculator/calculate', [BudgetCalculatorController::class, 'calculate']);
 
+Route::get('language/{locale}', [LanguageController::class, 'setLanguage'])->name('locale');
+
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    // Route::get('lang', [LanguageController::class, 'change'])->name("change.lang");
+
+    // Route::get('language/{locale}', [LanguageController::class, 'setLanguage'])->name('locale');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
