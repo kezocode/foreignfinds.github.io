@@ -1,10 +1,9 @@
 <x-layout>
-
     <!-- Header Section -->
     <header class="bg-white shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-6 text-center">
             <h1 class="font-[Montserrat] text-4xl tracking-tight text-gray-900">
-                Explore the Beauty of Japan
+                {{ __('home.title') }}
             </h1>
         </div>
 
@@ -21,23 +20,20 @@
                 <img class="h-[25rem] rounded-xl object-cover" src="./img/tokyo.png" alt="">
             </div>
             <div class="p-6 text-center">
-                <p class="mb-2 font-[Montserrat] text-4xl">Cultural Immersion</p>
+                <p class="mb-2 font-[Montserrat] text-4xl">
+                    {{ __('home.immersion') }}</p>
                 <div class="mt-6">
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        Explore the serene beauty of temples and shrines, like Kyoto's Fushimi Inari Shrine or Tokyo's
-                        Meiji
-                        Shrine,
-                        offering a glimpse into Japan's rich history and spiritual traditions.
+                        {{ __('home.description_beauty') }}
+
                     </li>
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        Experience vibrant festivals, tea ceremonies, and other cultural events that showcase Japan's
-                        unique
-                        traditions.
+                        {{ __('home.description_festival') }}
+
                     </li>
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        Japan is the birthplace of anime and manga, and you can explore themed attractions, conventions,
-                        and
-                        stores dedicated to these popular forms of entertainment.
+                        {{ __('home.description_anime') }}
+
                     </li>
                 </div>
             </div>
@@ -45,18 +41,18 @@
         <div class="grid grid-cols-2 gap-6 py-12">
 
             <div class="p-6 text-center">
-                <p class="mb-2 font-[Montserrat] text-4xl">Natural Beauty</p>
+                <p class="mb-2 font-[Montserrat] text-4xl">{{ __('home.natural_beauty') }}</p>
                 <div class="mt-6">
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        From the majestic snow-capped peaks of Mount Fuji to the pristine beaches of Okinawa, Japan
-                        boasts diverse and breathtaking natural landscapes.
+                        {{ __('home.natural_fuji') }}
+
                     </li>
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        Witness the iconic beauty of cherry blossoms during spring, when Japan transforms into a sea of
-                        pink.
+                        {{ __('home.natural_blossom') }}
+
                     </li>
                     <li class="pb-6 font-[playfair-display] text-xl text-gray-700">
-                        Relax and rejuvenate in Japan's natural hot springs, an essential Japanese experience.
+                        {{ __('home.natural_springs') }}
                     </li>
                 </div>
             </div>
@@ -67,45 +63,45 @@
 
         <!-- What Are You Looking For Section -->
         <section class="py-6 text-center">
-            <h1 class="mb-8 font-[Montserrat] text-5xl">What are you looking for?</h1>
+            <h1 class="mb-8 font-[Montserrat] text-5xl">{{ __('home.looking_for') }}</h1>
             <div class="grid grid-cols-4 gap-6">
                 <div class="group relative">
-                    <a href="{{ route('places') }}">
+                    <a href="{{ route('places') }}?lang={{ app()->getLocale() }}">
                         <img class="h-72 rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"
                             src="./img/tokyo.png" alt="Tokyo">
                         <span
                             class="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 font-[Montserrat] text-2xl font-semibold text-white transition-transform duration-300 group-hover:scale-105">
-                            Places to Visit
+                            {{ __('home.places') }}
                         </span>
                     </a>
                 </div>
                 <div class="group relative">
-                    <a href="{{ route('food') }}">
+                    <a href="{{ route('food') }}?lang={{ app()->getLocale() }}">
                         <img class="h-72 rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"
                             src="./img/ramen_jp.png" alt="Ramen">
                         <span
                             class="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 font-[Montserrat] text-2xl font-semibold text-white transition-transform duration-300 group-hover:scale-105">
-                            Best Food to Eat
+                            {{ __('home.best_food') }}
                         </span>
                     </a>
                 </div>
                 <div class="group relative">
-                    <a href="{{ route('fun') }}">
+                    <a href="{{ route('fun') }}?lang={{ app()->getLocale() }}">
                         <img class="h-72 rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"
                             src="./img/paragliding.png" alt="Paragliding">
                         <span
                             class="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 font-[Montserrat] text-2xl font-semibold text-white transition-transform duration-300 group-hover:scale-105">
-                            Fun Activities
+                            {{ __('home.fun_activities') }}
                         </span>
                     </a>
                 </div>
                 <div class="group relative">
-                    <a href="{{ route('history') }}">
+                    <a href="{{ route('history') }}?lang={{ app()->getLocale() }}">
                         <img class="h-72 rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"
                             src="./img/history.png" alt="History">
                         <span
                             class="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 font-[Montserrat] text-2xl font-semibold text-white transition-transform duration-300 group-hover:scale-105">
-                            Historical Places
+                            {{ __('home.historical_places') }}
                         </span>
                     </a>
                 </div>
@@ -113,8 +109,10 @@
         </section>
 
         <div class="py-12 text-center">
-            <h1 class="mb-8 font-[Montserrat] text-3xl">Worried about how much money to bring? Check out our
-                <a class="font-semibold" href="{{ route('travel-calculator') }}">Travel Calculator</a> here!
+            <h1 class="mb-8 font-[Montserrat] text-3xl">{{ __('home.worried_money') }}
+                <a class="font-semibold" href="{{ route('travel-calculator') }}?lang={{ app()->getLocale() }}">
+                    {{ __('home.travel_calculator') }}</a>
+                {{ __('home.here') }}
             </h1>
             </h1>
         </div>

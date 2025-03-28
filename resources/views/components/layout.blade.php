@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Foreign Finds</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link
@@ -26,19 +27,26 @@
 
                 <div class="flex w-1/3 justify-center space-x-6">
                     <a class="font-[Montserrat] text-lg text-white hover:text-black"
-                        href="{{ route('places') }}">Places</a>
-                    <a class="font-[Montserrat] text-lg text-white hover:text-black" href="{{ route('food') }}">Food</a>
-                    <a class="font-[Montserrat] text-lg text-white hover:text-black" href="{{ route('fun') }}">Fun</a>
+                        href="{{ route('places') }}">{{ __('layout.places') }}</a>
                     <a class="font-[Montserrat] text-lg text-white hover:text-black"
-                        href="{{ route('history') }}">History</a>
+                        href="{{ route('food') }}">{{ __('layout.food') }}</a>
                     <a class="font-[Montserrat] text-lg text-white hover:text-black"
-                        href="{{ route('travel-calculator') }}">Travel Calculator</a>
+                        href="{{ route('fun') }}">{{ __('layout.fun') }}</a>
+                    <a class="font-[Montserrat] text-lg text-white hover:text-black"
+                        href="{{ route('history') }}">{{ __('layout.history') }}</a>
+                    <a class="font-[Montserrat] text-lg text-white hover:text-black"
+                        href="{{ route('travel-calculator') }}">{{ __('layout.travel_calculator') }}</a>
 
                 </div>
 
                 <div class="flex w-1/3 justify-end">
+                    <div class="align-center flex">
+                        <a href="{{ route('locale', 'en') }}"><x-flag-country-us class="mr-4 h-8 w-8" /></a>
+                        <a href="{{ route('locale', 'ja') }}"><x-flag-country-jp class="mr-4 h-8 w-8" /></a>
+
+                    </div>
                     <a class="font-[Montserrat] text-lg text-white hover:text-black"
-                        href="{{ route('contact') }}">Contact</a>
+                        href="{{ route('contact') }}">{{ __('layout.contact') }}</a>
                 </div>
 
             </div>
@@ -47,8 +55,8 @@
 
     {{ $slot }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.0/flowbite.min.js"></script>
-    @vite('resources/js/script.js')
     @vite('resources/js/travel-calculator.js')
+    @vite('resources/js/script.js')
     <x-footer>
 
     </x-footer>
