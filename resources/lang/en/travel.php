@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'how_cost' => 'How much does it cost?',
+    'opening' => 'Trying to figure out how much you need to save to come to Japan can be stressful. With this calculator,
+                you can feel at ease!',
+    'budget_calculator' => 'Japan Travel Budget Calculator',
+    'people' => 'Number of People',
+    'duration' => 'Trip Duration (days)',
+    'accommodation' => 'Accommodation Type',
+    'hostel' => 'Hostel ($50/day)',
+    'business' => 'Business Hotel ($100/day)',
+    'luxury_hotel' => 'Luxury Hotel ($200/day)',
+    'food_budget' => 'Food Budget',
+    'budget' => 'Budget ($20/day)',
+    'average' => 'Average ($50/day)',
+    'luxury_food' => 'Luxury ($100/day)',
+    'transport_budget' => 'Transport Budget',
+    'walking' => 'Walking/Local ($10/day)',
+    'city' => 'City Transport ($30/day)',
+    'jr' => 'JR Pass ($50/day)',
+    'other_expenses' => 'Other Expenses (Shopping, Attractions, etc.)',
+    'on_average' => 'Travelers on average spend $200 per day shopping.',
+    'calculate_budget' => 'Calculate Budget',
+    'total_budget' => 'Total Budget: $',
+];
