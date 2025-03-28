@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => response.json())
         .then(data => {
-            resultDiv.innerText = "Total Budget: $" + data.total_cost;
+            resultDiv.innerText = totalBudgetText + data.total_cost;
         })
         .catch(error => console.error("Error:", error));
     });
