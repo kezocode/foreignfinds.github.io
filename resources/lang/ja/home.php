@@ -15,7 +15,7 @@ return [
     'best_food' => '最高の食事',
     'fun_activities' => '楽しいアクティビティ',
     'historical_places' => '歴史的場所',
-    'worried_money' => 'いくら持っていけばいいのか心配ですか？',
-    'travel_calculator' => 'トラベル計算機',
-    'here' => 'をご覧ください！',
+    'worried_money' => 'いくら持っていけばいいのか心配ですか？ ここで',
+    'travel_calculator' => '予算',
+    'here' => 'を計算してみましょう！',
 ];
