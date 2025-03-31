@@ -5,6 +5,6 @@ return [
     'food' => 'Food',
     'fun' => 'Fun',
     'history' => 'History',
-    'travel_calculator' => 'Travel Calculator',
+    'travel_calculator' => 'Budget',
     'contact' => 'Contact',
 ];

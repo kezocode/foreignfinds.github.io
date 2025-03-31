@@ -20,8 +20,8 @@ return [
     'best_food' => 'Best Food to Eat',
     'fun_activities' => 'Fun Activities',
     'historical_places' => 'Historical Places',
-    'worried_money' => 'Worried about how much money to bring? Check out our',
-    'travel_calculator' => 'Travel Calculator',
+    'worried_money' => 'Worried about how much money to bring? Calculate your',
+    'travel_calculator' => 'Budget',
     'here' => 'here!',
 
 ];
