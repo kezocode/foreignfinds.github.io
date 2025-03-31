@@ -15,23 +15,20 @@
             <table class="h-72 border-collapse border-b border-gray-300">
                 <tbody>
                     <tr class="border-b border-gray-300">
-                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('places.famous_for') }}</td>
-                        <td class="px-4 py-2 font-[Montserrat]">{{ $famousFor }}</td>
+                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('food.common_ingredients') }}</td>
+                        <td class="px-4 py-2 font-[Montserrat]">{{ $commonIngredients }}</td>
                     </tr>
                     <tr class="border-b border-gray-300">
-                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('places.regional_cuisine') }}</td>
-                        <td class="px-4 py-2 font-[Montserrat]">{{ $cuisine }}</td>
+                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('food.famous_places') }}</td>
+                        <td class="px-4 py-2 font-[Montserrat]">{{ $famousPlaces }}</td>
                     </tr>
                     <tr class="border-b border-gray-300">
-                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('places.population') }}</td>
-                        <td class="px-4 py-2 font-[Montserrat]">{{ $population }}</td>
+                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('food.average_price') }}</td>
+                        <td class="px-4 py-2 font-[Montserrat]">{{ $averagePrice }}</td>
                     </tr>
                     <tr class="border-b border-gray-300">
-                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('places.top_attractions') }}</td>
-                        <td class="px-4 py-2">
-                            <ul class="list-disc space-y-1 pl-5 font-[Montserrat] text-gray-700">
-                                {{ $slot }}
-                            </ul>
+                        <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('food.more') }}</td>
+                        <td class="px-4 py-2 font-[Montserrat]">{{ $slot }}</td>
                         </td>
                     </tr>
                 </tbody>
