@@ -6,96 +6,62 @@
         </div>
     </header>
 
+    <div class="relative h-56 overflow-hidden rounded-lg">
+        <img class="block h-full w-full object-cover" src="/img/sanrio.png" alt="Sanrio Theme Park">
+    </div>
+
     <main>
         <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
-                {{ __('fun.title') }}
+                {{ __('fun.opening') }}
             </p>
         </div>
 
         <div class="mx-auto max-w-7xl px-4 py-8">
             {{-- tokyo disney sea section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/disneysea.png"
-                        alt="Tokyo DisneySea">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
-                        {{ __('fun.disneysea') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('fun.disneysea_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-fun-info name="{{ __('fun.disneysea') }}" image="../img/disneysea.png"
+                location="{{ __('fun.disney_location') }}" description="{{ __('fun.disneysea_description') }}"
+                averagePrice="{{ __('fun.disney_price') }}">
+                <p>
+                    {{ __('fun.disney_time') }}
+                </p>
+            </x-fun-info>
             <br>
             {{-- fuji-q section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/fujiq.png" alt="Fuji-Q">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
-                        {{ __('fun.fujiq') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('fun.fujiq_description') }}
+            <x-fun-info name="{{ __('fun.fujiq') }}" image="../img/fujiq.png" location="{{ __('fun.fujiq_location') }}"
+                description="{{ __('fun.fujiq_description') }}" averagePrice="{{ __('fun.fujiq_price') }}">
+                <p>
+                    {{ __('fun.fujiq_time') }}
+                </p>
+            </x-fun-info>
 
-                    </p>
-                </div>
-            </div>
             <br>
             {{-- paragliding section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/paragliding.png"
-                        alt="Paragliding">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
-                        {{ __('fun.paragliding') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-center sm:text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('fun.paragliding_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-fun-info name="{{ __('fun.paragliding') }}" image="../img/paragliding.png"
+                location="{{ __('fun.paragliding_location') }}" description="{{ __('fun.paragliding_description') }}"
+                averagePrice="{{ __('fun.paragliding_price') }}">
+                <p>
+                    {{ __('fun.paragliding_time') }}
+                </p>
+            </x-fun-info>
             <br>
             {{-- maid cafe section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/maidcafe.png" alt="Maid Cafe">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
-                        {{ __('fun.maid_cafe') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('fun.maid_cafe_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-fun-info name="{{ __('fun.maidcafe') }}" image="../img/maidcafe.png"
+                location="{{ __('fun.maidcafe_location') }}" description="{{ __('fun.maidcafe_description') }}"
+                averagePrice="{{ __('fun.maidcafe_price') }}">
+                <p>
+                    {{ __('fun.maidcafe_time') }}
+                </p>
+            </x-fun-info>
             <br>
             {{-- festival section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/festivals.png" alt="Festival">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
-                        {{ __('fun.festival') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('fun.festival_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-fun-info name="{{ __('fun.festival') }}" image="../img/festivals.png"
+                location="{{ __('fun.festival_location') }}" description="{{ __('fun.festival_description') }}"
+                averagePrice="{{ __('fun.festival_price') }}">
+                <p>
+                    {{ __('fun.festival_time') }}
+                </p>
+            </x-fun-info>
             <br>
         </div>
     </main>

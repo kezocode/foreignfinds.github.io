@@ -6,110 +6,74 @@
         </div>
     </header>
 
+    <div class="relative h-56 overflow-hidden rounded-lg">
+        <img class="block h-full w-full object-cover" src="/img/street-food.png" alt="Street Food">
+    </div>
+
     <main>
         <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
-                {{ __('food.description') }}
+                {{ __('food.opening') }}
 
             </p>
         </div>
 
         <div class="mx-auto max-w-7xl px-4 py-8">
+
             {{-- sushi section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/sushi.png" alt="Sushi">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.sushi') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.sushi_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.sushi') }}" image="../img/sushi.png"
+                commonIngredients="{{ __('food.sushi_common') }}" famousPlaces="{{ __('food.sushi_famous') }}"
+                averagePrice="{{ __('food.sushi_price') }}">
+                <p>
+                    {{ __('food.sushi_description') }}
+                </p>
+            </x-food-info>
             <br>
             {{-- udon section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/udon.png" alt="Udon">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.udon') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.udon_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.udon') }}" image="../img/udon.png"
+                commonIngredients="{{ __('food.udon_common') }}" famousPlaces="{{ __('food.udon_famous') }}"
+                averagePrice="{{ __('food.udon_price') }}">
+                <p>
+                    {{ __('food.udon_description') }}
+                </p>
+            </x-food-info>
+
             <br>
             {{-- tempura section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/tempura.png" alt="Tempura">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.tempura') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.tempura_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.tempura') }}" image="../img/tempura.png"
+                commonIngredients="{{ __('food.tempura_common') }}" famousPlaces="{{ __('food.tempura_famous') }}"
+                averagePrice="{{ __('food.tempura_price') }}">
+                <p>
+                    {{ __('food.tempura_description') }}
+                </p>
+            </x-food-info>
             <br>
             {{-- yakitori section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/yakitori.png" alt="Yakitori">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.yakitori') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.yakitori_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.yakitori') }}" image="../img/yakitori.png"
+                commonIngredients="{{ __('food.yakitori_common') }}" famousPlaces="{{ __('food.yakitori_famous') }}"
+                averagePrice="{{ __('food.yakitori_price') }}">
+                <p>
+                    {{ __('food.yakitori_description') }}
+                </p>
+            </x-food-info>
             <br>
             {{-- sashimi section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/sashimi.png" alt="Sashimi">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.sashimi') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.sashimi_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.sashimi') }}" image="../img/sashimi.png"
+                commonIngredients="{{ __('food.sashimi_common') }}" famousPlaces="{{ __('food.sashimi_famous') }}"
+                averagePrice="{{ __('food.sashimi_price') }}">
+                <p>
+                    {{ __('food.sashimi_description') }}
+                </p>
+            </x-food-info>
             <br>
             {{-- ramen section --}}
-            <div class="mb-6 flex flex-row items-center justify-center space-x-8 space-y-0">
-                <div class="relative mx-4 inline-block">
-                    <img class="h-72 w-72 rounded-lg object-cover shadow-lg" src="../img/ramen.png" alt="Ramen">
-                    <span
-                        class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
-                        {{ __('food.ramen') }}
-                    </span>
-                </div>
-                <div class="max-w-xl text-left">
-                    <p class="mb-4 font-[playfair-display] text-xl text-gray-700">
-                        {{ __('food.ramen_description') }}
-                    </p>
-                </div>
-            </div>
+            <x-food-info name="{{ __('food.ramen') }}" image="../img/ramen.png"
+                commonIngredients="{{ __('food.ramen_common') }}" famousPlaces="{{ __('food.ramen_famous') }}"
+                averagePrice="{{ __('food.ramen_price') }}">
+                <p>
+                    {{ __('food.ramen_description') }}
+                </p>
+            </x-food-info>
             <br>
         </div>
     </main>
