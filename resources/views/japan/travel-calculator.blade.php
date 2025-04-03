@@ -1,92 +1,125 @@
 <x-layout>
-    <header class="bg-white shadow-sm">
-        <div class="mx-auto max-w-7xl px-4 py-6">
-            <h1 class="text-center font-[Montserrat] text-3xl font-bold tracking-tight text-gray-900">
-                {{ __('travel.how_cost') }}
+    <header class="bg-gradient-to-r from-blue-500 to-purple-500 shadow-md">
+        <div class="mx-auto max-w-7xl px-6 py-8 text-center text-white">
+            <h1 class="font-[Montserrat] text-4xl font-bold tracking-wide">
+                Japan Travel Budget Calculator
             </h1>
         </div>
     </header>
 
-    <main>
-        <div class="mx-auto max-w-7xl px-4 py-6">
-            <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
-                {{ __('travel.opening') }}
-            </p>
+    <main class="mx-auto max-w-4xl p-8 bg-white shadow-lg rounded-lg mt-8 mb-8">
+        <!-- Number of People & Trip Duration -->
+        <div class="mb-6 grid grid-cols-2 gap-4">
+            <!-- Number of People -->
+            <div>
+                <label class="block font-semibold mb-2 font-[Montserrat]">Number of People</label>
+                <div class="flex items-center border rounded-lg overflow-hidden">
+                    <button class="px-3 py-2 bg-gray-200 hover:bg-gray-300" onclick="adjustValue('peopleCount', -1)">-</button>
+                    <input type="number" id="peopleCount" value="1" min="1" class="w-full text-center border-none focus:ring-0 font-[Montserrat]">
+                    <button class="px-3 py-2 bg-gray-200 hover:bg-gray-300" onclick="adjustValue('peopleCount', 1)">+</button>
+                </div>
+            </div>
+            <!-- Trip Duration -->
+            <div>
+                <label class="block font-semibold mb-2 font-[Montserrat]">Trip Duration (days)</label>
+                <div class="flex items-center border rounded-lg overflow-hidden">
+                    <button class="px-3 py-2 bg-gray-200 hover:bg-gray-300" onclick="adjustValue('tripDuration', -1)">-</button>
+                    <input type="number" id="tripDuration" value="7" min="1" class="font-[Montserrat] w-full text-center border-none focus:ring-0">
+                    <button class="px-3 py-2 bg-gray-200 hover:bg-gray-300" onclick="adjustValue('tripDuration', 1)">+</button>
+                </div>
+            </div>
         </div>
 
-        <div class="mx-auto mb-8 max-w-2xl rounded-lg bg-white p-6 shadow-md">
-            <h2 class="mb-4 text-center font-[Montserrat] text-2xl font-semibold">{{ __('travel.budget_calculator') }}
-            </h2>
-
-            <form class="space-y-4" id="budgetForm">
-                @csrf
-
-                <input id="calculateRoute" type="hidden" value="{{ url('/travel-calculator/calculate') }}">
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.people') }}</label>
-                    <input class="w-full rounded border p-2 font-[playfair-display]" id="people" name="people_count"
-                        type="number" value="1" min="1">
-                </div>
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.duration') }}</label>
-                    <input class="w-full rounded border p-2 font-[playfair-display]" id="tripDays" name="trip_days"
-                        type="number" value="7" min="1">
-                </div>
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.accommodation') }}</label>
-                    <select class="w-full rounded border p-2 font-[playfair-display]" id="accommodation"
-                        name="accommodation">
-                        <option value="50">{{ __('travel.hostel') }}</option>
-                        <option value="100">{{ __('travel.business') }}</option>
-                        <option value="200">{{ __('travel.luxury_hotel') }}</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.food_budget') }}</label>
-                    <select class="w-full rounded border p-2 font-[playfair-display]" id="food" name="food">
-                        <option value="20">{{ __('travel.budget') }}</option>
-                        <option value="50">{{ __('travel.average') }}</option>
-                        <option value="100">{{ __('travel.luxury_food') }}</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.transport_budget') }}</label>
-                    <select class="w-full rounded border p-2 font-[playfair-display]" id="transport" name="transport">
-                        <option value="10">{{ __('travel.walking') }}</option>
-                        <option value="30">{{ __('travel.city') }}</option>
-                        <option value="50">{{ __('travel.jr') }}</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block font-[Montserrat] font-medium">{{ __('travel.other_expenses') }}</label>
-                    <p class="mb-1 font-[playfair-display] text-sm text-gray-700">
-                        {{ __('travel.on_average') }}
-                    </p>
-                    <div class="relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">$</span>
-                        <input class="w-full rounded border p-2 pl-7 font-[playfair-display]" id="otherExpenses"
-                            name="other_expenses" type="number" value="100" min="0">
-                    </div>
-                </div>
-
-                <button class="w-full rounded-lg bg-red-600 p-3 font-[Montserrat] font-semibold text-white"
-                    id="calculateBtn" type="button">
-                    {{ __('travel.calculate_budget') }}
-                </button>
-            </form>
-
-            <div class="mt-6 text-center text-lg font-semibold" id="result"></div>
+        <!-- Select Destinations -->
+        <div class="mb-6 p-4 border rounded-lg bg-gray-50">
+            <h2 class="text-xl font-semibold text-gray-800 font-[Montserrat]">Select Destinations</h2>
+            <div id="destinationOptions" class="grid grid-cols-3 gap-4 mt-3 font-[Montserrat]">
+                @foreach(['Tokyo', 'Osaka', 'Kyoto', 'Hokkaido', 'Okinawa', 'Ishikawa'] as $destination)
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" value="{{ $destination }}" class="accent-blue-600">
+                        <span class="text-gray-700">{{ $destination }}</span>
+                    </label>
+                @endforeach
+            </div>
         </div>
-        <script>
-            const totalBudgetText = @json(__('travel.total_budget'));
-        </script>
-        <x-contact-footer>
-        </x-contact-footer>
 
+        <!-- Transportation Costs -->
+        <div class="mb-6 p-4 border rounded-lg bg-gray-50 font-[Montserrat]">
+            <h2 class="text-xl font-semibold text-gray-700">Select Transportation Options</h2>
+            <div id="transportOptions" class="grid grid-cols-1 gap-4 mt-3 text-gray-700">
+                <!-- Placeholder for dynamically added transportation sections -->
+            </div>
+        </div>
+
+
+        <!-- Average Hotel Cost -->
+        <div class="mb-6 p-4 border rounded-lg bg-gray-50 font-[Montserrat]">
+            <h2 class="text-xl font-semibold text-gray-800">Average Hotel Cost</h2>
+            <div id="hotelOptions" class="grid grid-cols-2 gap-4 mt-3">
+                @foreach([
+                    '5000' => 'Capsule Hotel (¥5,000 Per Day)',
+                    '10000' => 'Average Hotel (¥10,000 Per Day)',
+                    '20000' => 'Business Hotel (¥20,000 Per Day)',
+                    '30000' => 'Luxury Hotel (¥30,000 Per Day)'
+                ] as $value => $label)
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" class="hotel-checkbox accent-blue-600" value="{{ $value }}">
+                        <span class="text-gray-700">{{ $label }}</span>
+                    </label>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Food Selection -->
+        <div class="mb-6 p-4 border rounded-lg bg-gray-50 font-[Montserrat]">
+            <h2 class="text-xl font-semibold text-gray-800">Select Food Options</h2>
+            <div id="foodOptions" class="grid grid-cols-4 gap-4 mt-3">
+                @foreach([
+                    '1000' => 'Ramen (¥1,000)',
+                    '1500' => 'Sushi (¥1,500)',
+                    '10000' => 'Kaiseki (¥10,000)',
+                    '700' => 'Udon (¥700)',
+                    '1200' => 'Tempura (¥1,200)',
+                    '2500' => 'Yakitori (¥2,500)',
+                    '2000' => 'Sashimi (¥2,000)',
+                    '300' => 'Takoyaki (¥300)',
+                ] as $value => $label)
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" value="{{ $value }}" class="accent-blue-600">
+                        <span class="text-gray-700">{{ $label }}</span>
+                    </label>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Shopping Selection -->
+        <div class="mb-6 p-4 border rounded-lg bg-gray-50 font-[Montserrat]">
+            <h2 class="text-xl font-semibold text-gray-800">Select Shopping Options</h2>
+            <div id="shoppingOptions" class="grid grid-cols-2 gap-4 mt-3">
+                @foreach([
+                    '5000' => 'Light Shopper (¥5,000 Per Day)',
+                    '10000' => 'Average Shopper (¥10,000 Per Day)',
+                    '20000' => 'Heavy Shopper (¥20,000 Per Day)',
+                    '30000' => 'Unstoppable Shopper (¥30,000 Per Day)'
+                ] as $value => $label)
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" value="{{ $value }}" class="accent-blue-600">
+                        <span class="text-gray-700">{{ $label }}</span>
+                    </label>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Total Cost -->
+        <div class="mt-6 p-6 bg-blue-100 text-blue-800 font-bold text-center text-2xl rounded-lg shadow-md font-[Montserrat]">
+            <span id="totalCost">Total Estimated Cost: ¥0</span>
+        </div>
+
+        <!-- Per Person Cost -->
+        <div class="mt-4 p-6 bg-green-100 text-green-800 font-bold text-center text-2xl rounded-lg shadow-md font-[Montserrat]">
+            <span id="perPersonCost">Per Person Cost: ¥0</span>
+        </div>
+    </main>
+
+    <x-contact-footer></x-contact-footer>
 </x-layout>
