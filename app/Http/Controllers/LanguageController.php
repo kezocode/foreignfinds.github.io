@@ -22,10 +22,6 @@ class LanguageController extends Controller
     // Set the application's locale
     App::setLocale($locale);
 
-    // Debugging: Check if the locale is set
-    // dump(app()->getLocale());
-    // dump(__('home.title'));
-
     return redirect()->back();
 }
 
