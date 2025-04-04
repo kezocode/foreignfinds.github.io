@@ -9,44 +9,44 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\View;
 
-Route::middleware(['locale'])->group(function () {
+// Route::middleware(['locale'])->group(function () {
 
-Route::get('/', function () {
-    return view('index');
-});
+    Route::get('/', function () {
+        return view('index');
+    });
 
-Route::get('/japan/places', function () {
-    return view('japan.places');
-})->name('places');
+    Route::get('/japan/places', function () {
+        return view('japan.places');
+    })->name('places');
 
-Route::get('/japan/food', function () {
-    return view('japan.food');
-})->name('food');
+    Route::get('/japan/food', function () {
+        return view('japan.food');
+    })->name('food');
 
-Route::get('/japan/fun', function () {
-    return view('japan.fun');
-})->name('fun');
+    Route::get('/japan/fun', function () {
+        return view('japan.fun');
+    })->name('fun');
 
-Route::get('/japan/history', function () {
-    return view('japan.history');
-})->name('history');
+    Route::get('/japan/history', function () {
+        return view('japan.history');
+    })->name('history');
 
-Route::get('/japan/travel-calculator', function () {
-    return view('japan.travel-calculator');
-})->name('travel-calculator');
+    Route::get('/japan/travel-calculator', function () {
+        return view('japan.travel-calculator');
+    })->name('travel-calculator');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+    Route::get('/contact', function () {
+        return view('contact');
+    })->name('contact');
 
-Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact.submit');
+    Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact.submit');
 
-Route::get('/travel-calculator', [BudgetCalculatorController::class, 'index']);
-Route::post('/travel-calculator/calculate', [BudgetCalculatorController::class, 'calculate']);
+    Route::get('/travel-calculator', [BudgetCalculatorController::class, 'index']);
+    Route::post('/travel-calculator/calculate', [BudgetCalculatorController::class, 'calculate']);
 
-Route::get('language/{locale}', [LanguageController::class, 'setLanguage'])->name('locale');
+    Route::get('language/{locale}', [LanguageController::class, 'setLanguage'])->name('locale');
 
-});
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
