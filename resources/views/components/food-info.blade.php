@@ -5,7 +5,7 @@
             <img class="h-full w-full rounded-lg object-cover shadow-lg" src="{{ $image }}"
                 alt="{{ $name }}">
             <span
-                class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
+                class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
                 {{ $name }}
             </span>
         </div>

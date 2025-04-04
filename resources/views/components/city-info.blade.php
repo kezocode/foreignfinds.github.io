@@ -5,7 +5,7 @@
             <img class="h-full w-full rounded-lg object-cover shadow-lg" src="{{ $image }}"
                 alt="{{ $name }}">
             <span
-                class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-5xl font-semibold text-white">
+                class="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 font-[Montserrat] text-4xl font-semibold text-white">
                 {{ $name }}
             </span>
         </div>
@@ -29,7 +29,7 @@
                     <tr class="border-b border-gray-300">
                         <td class="px-4 py-2 font-[Montserrat] font-semibold">{{ __('places.top_attractions') }}</td>
                         <td class="px-4 py-2">
-                            <ul class="list-disc space-y-1 pl-5 font-[Montserrat] text-gray-700">
+                            <ul class="list-none space-y-1 font-[Montserrat] text-gray-700">
                                 {{ $slot }}
                             </ul>
                         </td>
