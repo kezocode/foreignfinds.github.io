@@ -8,6 +8,14 @@
             <p class="text-black-400 mb-4 text-center font-[Montserrat] text-xl font-light">
                 {{ __('contact.opening') }}
             </p>
+
+            <!-- Success Message -->
+            @if(session('success'))
+            <div class="bg-green-500 text-white p-4 rounded-md mb-4 font-[Montserrat]">
+                {{ session('success') }}
+            </div>
+            @endif
+
             <form class="space-y-4" action=" {{ route('contact.submit') }} " method="POST">
                 @csrf
 

@@ -7,7 +7,11 @@
         </div>
     </header>
 
-    <main class="mx-auto max-w-xl">
+    <div class="relative h-56 overflow-hidden rounded-lg">
+        <img class="block h-full w-full object-cover" src="/img/samurai.png" alt="Samurai Museum">
+    </div>
+
+    <main class="mx-8">
         <div class="mx-auto max-w-7xl px-4 py-6">
             <p class="text-center font-[Montserrat] text-2xl tracking-tight text-gray-900">
                 {{ __('history.opening') }}
