@@ -2,7 +2,7 @@
 
 return [
     'where_visit' => 'どこを訪れるか？',
-    'opening' => '日本は素晴らしい場所でいっぱいで、限られた旅行時間で選ぶのが難しいほどです。最適な目的地の計画を始めましょう！',
+    'opening' => '日本は素晴らしい場所でいっぱいで、限られた旅行時間で選ぶのが難しいほど。最適な目的地の計画を始めましょう！',
     'famous_for' => '有名なもの:',
     'regional_cuisine' => '地域の料理:',
     'population' => '人口:',
@@ -43,6 +43,27 @@ return [
     'ninjadera' => '忍者寺',
     'higashi' => '東茶屋街',
     'omicho' => '近江町市場',
+
+    'hokkaido' => '北海道',
+    'hokkaido_famous' => '北海道は、スキー、自然の美しさ、海産物、そして独自の文化で有名です。',
+    'hokkaido_cuisine' => '新鮮な海産物、ウニ、札幌ラーメン、夕張メロン、そして札幌ビール。',
+    'hokkaido_population' => '522万人',
+    'top_hokkaido' => '北海道のトップ観光地:',
+    'sapporo_beer' => 'サッポロビール博物館',
+    'furano' => '富良野の花畑',
+    'otaru' => '小樽: 魅力的な運河の町',
+    'ashiyama' => '旭山動物園: 野生動物の不思議',
+
+    'okinawa' => '沖縄',
+    'okinawa_famous' => '沖縄は、美しいビーチ、独自の料理、そして豊かな文化で有名です。',
+    'okinawa_cuisine' => '沖縄そば、タコライス、ゴーヤチャンプル、そしてアグー豚。',
+    'okinawa_population' => '140万人',
+    'top_okinawa' => '沖縄のトップ観光地:',
+    'churaumi' => '沖縄美ら海水族館',
+    'shurijo' => '首里城',
+    'kokusai' => '国際通り',
+    'blue_cave' => '青の洞窟',
+
     'closing' => '訪れるべき場所を知ったら、荷物をまとめて飛行機に乗りましょう！',
 ];
 

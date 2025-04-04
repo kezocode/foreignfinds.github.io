@@ -9,4 +9,5 @@ return [
     'your_message' => 'あなたのメッセージ',
     'leave_comment' => 'コメントを残す..',
     'send_message' => 'メッセージを送信',
+    'thank_you' => 'メールが送信されました！',
 ];

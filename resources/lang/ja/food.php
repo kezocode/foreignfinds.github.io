@@ -44,5 +44,18 @@ return [
     'ramen_price' => '1杯600～1200円。',
     'ramen_description' => 'ラーメンの種類には、塩、醤油、味噌、豚骨などがあります。',
 
+    'takoyaki' => 'たこ焼き',
+    'takoyaki_common' => 'たこ、ねぎ、ソース、マヨネーズ、鰹節が入った生地。',
+    'takoyaki_famous' => '大阪',
+    'takoyaki_price' => '300円から500円。',
+    'takoyaki_description' => '他の種類のたこ焼きにはチーズや明太子があります。',
+
+    'kaiseki' => '懐石料理',
+    'kaiseki_common' => '季節の地元の食材を使った伝統的な日本のコース料理。',
+    'kaiseki_famous' => '京都',
+    'kaiseki_price' => '10,000円から30,000円。',
+    'kaiseki_description' => '懐石料理は6コースから15コースの料理を含みます。',
+
+
     'closure' => '日本は世界でも最高の食文化を誇ります。食欲をそそる画像が、あなたを早く日本へ来たくさせることでしょう！',
 ];
