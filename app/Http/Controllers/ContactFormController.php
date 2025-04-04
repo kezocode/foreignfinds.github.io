@@ -22,6 +22,6 @@ class ContactFormController extends Controller
 
     Mail::to('foreignfinds@example.com')->send(new ContactMail($validated));
 
-    return back()->with('success', 'Thank you for your message!');
+    return back()->with('success', __('contact.thank_you'));
 }
 }
