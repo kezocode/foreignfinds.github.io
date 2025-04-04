@@ -2,12 +2,13 @@
 
 return [
     'where_visit' => 'Where to Visit?',
-    'opening' => 'Japan is full of wonderful places, so much so that it\'s hard to choose with limited traveling time.
-                Get a head start on planning the best destination!',
+    'opening' => 'Japan is full of wonderful places, so it\'s hard to choose where to go.
+                Find the best destination!',
     'famous_for' => 'Famous For:',
     'regional_cuisine' => 'Regional Cuisine:',
     'population' => 'Population:',
     'top_attractions' => 'Top Attractions:',
+
     'kyoto' => 'Kyoto',
     'kyoto_famous' => 'Kyoto is famous for its temples, shrines, and historical sites.',
     'kyoto_cuisine' => 'Kaiseki Ryori, Yatsuhashi, and Kyoto-style sushi.',
@@ -17,33 +18,57 @@ return [
     'railway' => 'Kyoto Railway Museum',
     'sento' => 'Sento Palace',
     'nishiki' => 'Nishiki Market',
+
     'tokyo' => 'Tokyo',
     'tokyo_famous' => 'Tokyo is famous for its anime culture and historical sites like Asakusa.',
-    'tokyo_cuisine' => 'Monjayaki, Edomae Sushi, Fukagawa Meshi',
+    'tokyo_cuisine' => 'Monjayaki, Edomae Sushi, Fukagawa Meshi.',
     'tokyo_population' => '13.96 million',
     'top_tokyo' => 'Top Tokyo Attractions:',
     'akihabara' => 'Akihabara',
     'tsukiji' => 'Tsukiji Outer Market',
     'korakuen' => 'Koishikawa Korakuen',
     'imperial' => 'Imperial Palace',
+
     'osaka' => 'Osaka',
-    'osaka_famous' => 'Osaka is famous for its vibrant nightlife, street food culture, and historical landmarks.',
-    'osaka_cuisine' => 'Takoyaki, Okonomiyaki, Kushikatsu',
+    'osaka_famous' => 'Osaka is famous for its vibrant nightlife, street food, and historical landmarks.',
+    'osaka_cuisine' => 'Takoyaki, Okonomiyaki, Kushikatsu.',
     'osaka_population' => '2.75 million',
     'top_osaka' => 'Top Osaka Attractions:',
     'universal' => 'Universal Studios',
     'minami' => 'Minami Namba',
     'aquarium' => 'Osaka Aquarium',
     'osaka_castle' => 'Osaka Castle',
+
     'kanazawa' => 'Kanazawa',
     'kanazawa_famous' => 'Kanazawa is known for its Edo-period districts, gold leaf crafts, and samurai culture.',
-    'kanazawa_cuisine' => 'Jibuni (duck stew), Kanazawa sushi, Gold-leaf ice cream',
+    'kanazawa_cuisine' => 'Jibuni (duck stew), Kanazawa sushi, Gold-leaf ice cream.',
     'kanazawa_population' => '450,000',
     'top_kanazawa' => 'Top Kanazawa Attractions:',
     'kenrokuen' => 'Kenrokuen',
     'ninjadera' => 'Ninjadera',
     'higashi' => 'Higashi Chaya District',
     'omicho' => 'Omicho Market',
+
+    'hokkaido' => 'Hokkaido',
+    'hokkaido_famous' => 'Hokkaido is famous for its skiing, natural beauty, seafood, and unique culture.',
+    'hokkaido_cuisine' => 'Fresh seafood, sea urchin, Sapporo ramen, Yubari King melons, and Sapporo Beer.',
+    'hokkaido_population' => '5.22 million',
+    'top_hokkaido' => 'Top Hokkaido Attractions:',
+    'sapporo_beer' => 'Sapporo Beer Museum',
+    'furano' => 'Furano Flower Fields',
+    'otaru' => 'Otaru: The Charming Canal Town',
+    'ashiyama' => 'Asahiyama Zoo: Wildlife Wonders',
+
+    'okinawa' => 'Okinawa',
+    'okinawa_famous' => 'Okinawa is famous for its beautiful beaches, unique cuisine, and rich culture.',
+    'okinawa_cuisine' => 'Okinawa soba, taco rice, goya champuru, and Agu pork.',
+    'okinawa_population' => '1.4 million',
+    'top_okinawa' => 'Top Okinawa Attractions:',
+    'churaumi' => 'Okinawa Churaumi Aquarium',
+    'shurijo' => 'Shurijo Castle',
+    'kokusai' => 'Kokusai-dori Street',
+    'blue_cave' => 'Blue Cave',
+
     'closing' => 'Now that you know the best places to visit, pack your bags and jump on a flight!',
 
 ];

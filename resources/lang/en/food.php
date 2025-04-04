@@ -44,6 +44,18 @@ return [
     'ramen_price' => '600 to 1200 yen per bowl.',
     'ramen_description' => 'Popular types of ramen are salt, soy sauce, miso, and pork.',
 
+    'takoyaki' => 'Takoyaki',
+    'takoyaki_common' => 'Batter with octopus, green onions, sauce, mayonnaise, bonito flakes.',
+    'takoyaki_famous' => 'Osaka',
+    'takoyaki_price' => '300 to 500 yen.',
+    'takoyaki_description' => 'Other types of takoyaki are cheese and mentaiko.',
+
+    'kaiseki' => 'Kaiseki',
+    'kaiseki_common' => 'A traditional multi-course Japanese meal with seasonal, local ingredients.',
+    'kaiseki_famous' => 'Kyoto',
+    'kaiseki_price' => '10,000 to 30,000 yen.',
+    'kaiseki_description' => 'Kaiseki meals contain anywhere from six to 15 courses.',
+
     'closure' => 'Japan has some of the best food in the world. The mouthwatering images will make you want to come to Japan
             as soon as possible!',
 ];

@@ -9,4 +9,5 @@ return [
     'your_message' => 'Your Message',
     'leave_comment' => 'Leave a comment..',
     'send_message' => 'Send message',
+    'thank_you' => 'Thank you for your message!',
 ];
