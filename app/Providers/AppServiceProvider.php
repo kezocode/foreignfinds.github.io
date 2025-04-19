@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,8 +21,12 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot(UrlGenerator $url): void
 {
+    if (env('APP_ENV') == 'production') {
+        $url->forceScheme('https');
+    }
+
     if (Session::has('locale')) {
         App::setLocale(Session::get('locale'));
     }
